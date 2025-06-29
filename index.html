@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>稅收分配計算器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💸 稅收分配計算器</h1>
+
+    <div class="inputs">
+      <label>總稅收 <input type="text" id="tax"></label>
+      <label>5分人數(1~10) <input type="text" id="s5"></label>
+      <label>4分人數(11~30) <input type="text" id="s4"></label>
+      <label>3分人數(31~50) <input type="text" id="s3"></label>
+      <label>2分人數(51~100) <input type="text" id="s2"></label>
+      <label>1分人數(百榜外) <input type="text" id="s1"></label>
+      <label>換算鑽石 <input type="text" id="dia"></label>
+      <label>鑽石比值 <input type="text" id="rate"></label>
+    </div>
+
+    <button id="calculate">🚀 開始計算</button>
+
+    <h2>📊 計算結果</h2>
+    <div class="results">
+      <div><label>總人數</label><input id="r_people" readonly><button class="copy" data-id="r_people">複製</button></div>
+      <div><label>總分</label><input id="r_score" readonly><button class="copy" data-id="r_score">複製</button></div>
+      <div><label>每分金額</label><input id="r_per" readonly><button class="copy" data-id="r_per">複製</button></div>
+      <div><label>1~10名金額</label><input id="r_5" readonly><button class="copy" data-id="r_5">複製</button></div>
+      <div><label>11~30名金額</label><input id="r_4" readonly><button class="copy" data-id="r_4">複製</button></div>
+      <div><label>31~50名金額</label><input id="r_3" readonly><button class="copy" data-id="r_3">複製</button></div>
+      <div><label>51~100名金額</label><input id="r_2" readonly><button class="copy" data-id="r_2">複製</button></div>
+      <div><label>百榜外金額</label><input id="r_1" readonly><button class="copy" data-id="r_1">複製</button></div>
+      <div><label>鑽石克倫</label><input id="r_dia" readonly><button class="copy" data-id="r_dia">複製</button></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
